@@ -18,6 +18,8 @@ nav {
 nav .nav {
   max-width: 1200px;
   margin: 0 auto;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
 }
 
 nav .nav a {
@@ -44,6 +46,8 @@ nav .nav a:hover {
 #pic {
   max-width: 1200px;
   margin: 0 auto;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -81,6 +85,8 @@ nav .nav a:hover {
 #main {
   max-width: 1200px;
   margin: 0 auto;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -101,5 +107,23 @@ nav .nav a:hover {
 #main .txt p {
   line-height: 1.8rem;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+    width: 750px;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+  }
+  #pic {
+    width: 750px;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+  }
+  #main {
+    width: 750px;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+  }
 }
 /*# sourceMappingURL=style.css.map */

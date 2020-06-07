@@ -1,6 +1,7 @@
 @mixin desktop-box {
     max-width: 1200px;
     margin: 0 auto;
+    transition: .3s ease-in;
 }
 
 *{
@@ -106,5 +107,29 @@ nav{
         }
     }
 
+
+}
+
+
+// RWD
+// 平板: 尺寸 768(大於等於) ~ 1199(小於等於)
+@media screen and (min-width:768px) and (max-width:1199px){
+
+    @mixin pad-box {
+        width: 750px;
+        transition: .3s ease-in;
+    }
+
+    .nav{
+        @include pad-box();
+    }
+
+    #pic{
+        @include pad-box();
+    }
+
+    #main{
+        @include pad-box();
+    }
 
 }
