@@ -43,3 +43,38 @@ nav{
     background-position: center;
     background-size: cover;
 }
+
+// 圖片區
+.pic{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 0;
+
+    .pic1{
+        background-color: #5b0fa1;
+        height: 300px;
+
+        &::before{
+            content:'>' ;
+            font-size: 50px;
+            color: #fff; 
+            display: grid;
+            line-height: 300px;
+            text-align: center;
+        }
+    }
+
+    .pic2{
+        background-image: url(./img/d-beach-1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .pic3{
+        background-image: url(./img/d-beach-2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
