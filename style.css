@@ -41,7 +41,7 @@ nav .nav a:hover {
   background-size: cover;
 }
 
-.pic {
+#pic {
   max-width: 1200px;
   margin: 0 auto;
   display: -ms-grid;
@@ -51,12 +51,12 @@ nav .nav a:hover {
   font-size: 0;
 }
 
-.pic .pic1 {
+#pic .pic1 {
   background-color: #5b0fa1;
   height: 300px;
 }
 
-.pic .pic1::before {
+#pic .pic1::before {
   content: '>';
   font-size: 50px;
   color: #fff;
@@ -66,15 +66,40 @@ nav .nav a:hover {
   text-align: center;
 }
 
-.pic .pic2 {
+#pic .pic2 {
   background-image: url(./img/d-beach-1.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.pic .pic3 {
+#pic .pic3 {
   background-image: url(./img/d-beach-2.jpg);
   background-size: cover;
   background-position: center;
+}
+
+#main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 30px;
+  grid-gap: 0 40px;
+}
+
+#main h3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #088ca5;
+}
+
+#main .txt p {
+  line-height: 1.8rem;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
