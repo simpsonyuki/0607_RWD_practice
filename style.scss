@@ -128,22 +128,47 @@ nav{
         transition: .3s ease-in;
     }
 
-    .nav{
-        @include pad-box();
-        display: none;
-        }
+    nav{
+        width: 100%;
 
-    .menu-rwd{
-        @include pad-box();
-        margin: 0 auto;
-        text-align: left;
-        line-height: 90px;
-        display: block;
-
-        .submenu{
+        .nav{
+            @include pad-box();
             display: none;
+            }
+    
+        .menu-rwd{
+            @include pad-box();
+            line-height: 110px;
+            display: block;
+            text-align: left;
+            margin: 0 auto;
+            position: relative;
+
+            .submenu{
+                display: none;
+                position: absolute;
+                padding: 20px 30px;
+                top: 90px;
+                background-color: rgba(50, 60, 63, 0.8);
+    
+                a{
+                    display: block;
+                    line-height: 2rem;
+                    color: #fff;
+                    text-decoration: none;
+    
+                &:hover{
+                    color: deepskyblue;
+                }    
+                }
+            }
+            &:hover{
+                .submenu{
+                    display: block;
+                }
+            }
         }
-        }
+    }
 
     #pic{
         @include pad-box();
@@ -177,9 +202,44 @@ nav{
         max-width: 100%;
         transition: .3s ease-in;
     }
+    nav{
+        .nav{
+            @include phone-box();
+            display: none;
+        }
+        .menu-rwd{
+            @include phone-box();
+            line-height: 110px;
+            display: block;
+            text-align: left;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
 
-    .nav{
-        @include phone-box();
+            .submenu{
+                display: none;
+                position: absolute;
+                padding: 20px 30px;
+                top: 90px;
+                background-color: rgba(50, 60, 63, 0.8);
+    
+                a{
+                    display: block;
+                    line-height: 2rem;
+                    color: #fff;
+                    text-decoration: none;
+    
+                &:hover{
+                    color: deepskyblue;
+                }    
+                }
+            }
+            &:hover{
+                .submenu{
+                    display: block;
+                }
+            }
+        }
     }
 
     #pic{

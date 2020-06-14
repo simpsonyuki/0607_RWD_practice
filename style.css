@@ -116,23 +116,43 @@ nav .nav a:hover {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav {
+  nav {
+    width: 100%;
+  }
+  nav .nav {
     max-width: 750px;
     -webkit-transition: .3s ease-in;
     transition: .3s ease-in;
     display: none;
   }
-  .menu-rwd {
+  nav .menu-rwd {
     max-width: 750px;
     -webkit-transition: .3s ease-in;
     transition: .3s ease-in;
-    margin: 0 auto;
-    text-align: left;
-    line-height: 90px;
+    line-height: 110px;
     display: block;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
   }
-  .menu-rwd .submenu {
+  nav .menu-rwd .submenu {
     display: none;
+    position: absolute;
+    padding: 20px 30px;
+    top: 90px;
+    background-color: rgba(50, 60, 63, 0.8);
+  }
+  nav .menu-rwd .submenu a {
+    display: block;
+    line-height: 2rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  nav .menu-rwd .submenu a:hover {
+    color: deepskyblue;
+  }
+  nav .menu-rwd:hover .submenu {
+    display: block;
   }
   #pic {
     max-width: 750px;
@@ -160,10 +180,41 @@ nav .nav a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .nav {
+  nav .nav {
     max-width: 100%;
     -webkit-transition: .3s ease-in;
     transition: .3s ease-in;
+    display: none;
+  }
+  nav .menu-rwd {
+    max-width: 100%;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+    line-height: 110px;
+    display: block;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  nav .menu-rwd .submenu {
+    display: none;
+    position: absolute;
+    padding: 20px 30px;
+    top: 90px;
+    background-color: rgba(50, 60, 63, 0.8);
+  }
+  nav .menu-rwd .submenu a {
+    display: block;
+    line-height: 2rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  nav .menu-rwd .submenu a:hover {
+    color: deepskyblue;
+  }
+  nav .menu-rwd:hover .submenu {
+    display: block;
   }
   #pic {
     max-width: 100%;
