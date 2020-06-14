@@ -111,11 +111,28 @@ nav .nav a:hover {
   margin-bottom: 20px;
 }
 
+.menu-rwd {
+  display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav {
     max-width: 750px;
     -webkit-transition: .3s ease-in;
     transition: .3s ease-in;
+    display: none;
+  }
+  .menu-rwd {
+    max-width: 750px;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 90px;
+    display: block;
+  }
+  .menu-rwd .submenu {
+    display: none;
   }
   #pic {
     max-width: 750px;

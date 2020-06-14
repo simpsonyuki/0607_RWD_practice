@@ -112,6 +112,12 @@ nav{
 
 }
 
+// 漢堡選單
+.menu-rwd{
+    // display: none; 將元素隱藏且元素占用的空間也會拿掉
+    // visibility: hidden; 將元素隱藏但保留元素占用的空間(只是把透明度設為0的概念)
+    display: none;
+}
 
 // RWD
 // 平板: 尺寸 768(大於等於) ~ 1199(小於等於)
@@ -124,7 +130,20 @@ nav{
 
     .nav{
         @include pad-box();
-    }
+        display: none;
+        }
+
+    .menu-rwd{
+        @include pad-box();
+        margin: 0 auto;
+        text-align: left;
+        line-height: 90px;
+        display: block;
+
+        .submenu{
+            display: none;
+        }
+        }
 
     #pic{
         @include pad-box();
